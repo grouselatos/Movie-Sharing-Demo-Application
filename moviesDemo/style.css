@@ -1,0 +1,169 @@
+﻿html,body{
+    margin: 0;
+    height: 100%;
+    font-family: cursive;
+    color: white;
+}
+#main-nav{
+    background-image: linear-gradient(#000000,#434343);
+    height: 50px;
+}
+
+#sidebar{
+    background-image: linear-gradient(#000000,#434343);
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#main-content{
+    width: 80%;
+    float: right;
+    background-color: black;
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#logo-area{
+    width: 30%;
+    float: left;
+}
+
+
+ul.navbar{
+    float:right;
+    padding: 0;
+    margin:13px 10px;
+}
+ul.navbar li {
+    list-style: none;
+    display: inline;
+}
+
+ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 17px 10px;
+}
+
+ul.navbar li a:hover {
+    background-color: brown;
+}
+
+.movie-thumb{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    min-height: 375px;
+}
+.movie-box{
+    float: left;
+    width: 23%;
+    padding: 10px;
+}
+
+button.buy-button{
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+
+button.buy-button:hover {
+    background-color: red;
+}
+
+ul.sidebar-nav{
+    padding: 0;
+}
+
+.sidebar-nav li{
+    list-style: none;
+    padding: 10px;
+}
+
+.sidebar-nav li:hover{
+   background-color: #272727;
+   cursor: pointer;
+}
+.sidebar-nav li span{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+#footer{
+    background-image: linear-gradient(#000000,#434343);
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #page {
+        height: 100%;
+    }
+    button{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    html,body{
+        width: fit-content;
+        font-size: 1.3em;
+    }
+    .container{
+        width: auto;
+    }
+    #sidebar{
+        width:100%;
+    }
+    #main-content{
+        text-align: center;
+        width: 100%;
+    }
+    .movie-box{
+        width: 100%;
+    }
+    .sidebar-nav{
+        text-align: center;
+        height: auto;
+    }
+    #logo-area{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    ul.navbar{
+        margin: 0;
+        width: 100%
+    }
+
+    ul.navbar li {
+        text-align: center;
+        display: block;
+    }
+
+    button.buy-button{
+        font-size:80%;
+        line-height: 1;
+    }
+
+    #footer{
+        width: 100%;
+    }
+
+    #navbar-area{
+        
+        width: 100%;
+    }
+
+  }
